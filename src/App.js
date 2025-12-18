@@ -1,18 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import About from './components/About/About'
-import Hero from './components/Hero/Hero'
 import Layout from './components/Layout/Layout'
-import OFDList from './components/OFD/OFDList'
-import Stats from './components/Stats/Stats'
+import AboutPage from './pages/AboutPage'
+import ContactsPage from './pages/ContactsPage'
+import HomePage from './pages/HomePage'
+import OperatorsPage from './pages/OperatorsPage'
 
 function App() {
 	return (
-		<Layout>
-			<Hero />
-			<OFDList />
-			<Stats />
-			<About />
-		</Layout>
+		<BrowserRouter>
+			<Layout>
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/operators' element={<OperatorsPage />} />
+					<Route path='/about' element={<AboutPage />} />
+					<Route path='/contacts' element={<ContactsPage />} />
+				</Routes>
+			</Layout>
+		</BrowserRouter>
 	)
 }
 

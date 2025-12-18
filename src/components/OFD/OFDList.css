@@ -10,7 +10,29 @@
 .ofd-list__subtitle {
 	font-size: 14px;
 	color: #6b7280;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
+}
+
+.ofd-list__filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.ofd-list__filters button {
+	padding: 6px 12px;
+	border-radius: 999px;
+	border: 1px solid #e5e7eb;
+	background: #ffffff;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.ofd-list__filters button.active {
+	background: #2563eb;
+	border-color: #2563eb;
+	color: #ffffff;
 }
 
 .ofd-list__grid {

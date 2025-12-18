@@ -1,10 +1,14 @@
 import './App.css';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <h1>OFDEasy Маркет</h1>
-    </div>
+    <Layout>
+      <section id="home">
+        <h1>Платформа кодов ОФД со скидками</h1>
+        <p>Подберите оператора фискальных данных и срок подключения в пару кликов.</p>
+      </section>
+    </Layout>
   );
 }
 

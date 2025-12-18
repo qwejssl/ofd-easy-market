@@ -1,3 +1,4 @@
+import Features from '../components/Features/Features'
 import Hero from '../components/Hero/Hero'
 import Stats from '../components/Stats/Stats'
 
@@ -6,6 +7,7 @@ function HomePage() {
 		<>
 			<Hero />
 			<Stats />
+			<Features />
 		</>
 	)
 }

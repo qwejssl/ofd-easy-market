@@ -1,60 +1,85 @@
 .hero {
-	padding: 48px 0 32px;
+	padding: 40px 0 32px;
+}
+
+.hero__badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: #eef2ff;
+	color: #4338ca;
+	font-size: 12px;
+	margin-bottom: 14px;
 }
 
 .hero__content {
-	max-width: 640px;
+	max-width: 720px;
 }
 
 .hero__content h1 {
 	font-size: 32px;
 	line-height: 1.2;
-	margin-bottom: 16px;
-	color: #111827;
+	margin-bottom: 14px;
 }
 
 .hero__content p {
 	font-size: 16px;
-	color: #4b5563;
-	margin-bottom: 24px;
+	margin-bottom: 14px;
+}
+
+.hero__bullets {
+	margin-bottom: 18px;
+}
+
+.hero__bullets li {
+	font-size: 14px;
+	color: var(--color-text-muted);
+	margin-bottom: 4px;
 }
 
 .hero__actions {
 	display: flex;
 	gap: 12px;
 	flex-wrap: wrap;
+	margin-bottom: 10px;
 }
 
 .hero__primary,
 .hero__secondary {
 	display: inline-block;
 	padding: 10px 18px;
-	border-radius: 6px;
+	border-radius: 999px;
 	text-decoration: none;
 	font-size: 14px;
 }
 
 .hero__primary {
-	background: #2563eb;
+	background: var(--color-primary);
 	color: #ffffff;
 }
 
 .hero__primary:hover {
-	background: #1d4ed8;
+	background: var(--color-primary-dark);
 }
 
 .hero__secondary {
-	border: 1px solid #d1d5db;
-	color: #374151;
+	border: 1px solid var(--color-border);
+	color: var(--color-text-main);
+	background: #ffffff;
 }
 
 .hero__secondary:hover {
 	background: #f3f4f6;
 }
 
+.hero__note {
+	font-size: 12px;
+	color: #6b7280;
+}
+
 @media (max-width: 640px) {
 	.hero {
-		padding-top: 32px;
+		padding-top: 28px;
 	}
 
 	.hero__content h1 {

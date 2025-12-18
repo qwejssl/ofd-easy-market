@@ -35,12 +35,18 @@
 	color: #ffffff;
 }
 
-.ofd-list__grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	gap: 16px;
+/* обёртка для плавного открытия/закрытия списка */
+.ofd-list__grid-wrapper {
+	max-height: 600px; /* высота примерно для 3 карточек */
+	overflow: hidden;
+	transition: max-height 0.4s ease;
 }
 
+.ofd-list__grid-wrapper--expanded {
+	max-height: 2000px; /* достаточно большая, чтобы влезли все */
+}
+
+/* сетка карточек */
 .ofd-list__grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -51,4 +57,25 @@
 	.ofd-list__filters {
 		justify-content: flex-start;
 	}
+}
+
+/* кнопка Показать всех / Свернуть */
+
+.ofd-list__toggle {
+	margin-top: 16px;
+	text-align: center;
+}
+
+.ofd-list__toggle button {
+	border: 1px solid var(--color-border);
+	border-radius: 999px;
+	padding: 8px 14px;
+	background: #ffffff;
+	font-size: 14px;
+	cursor: pointer;
+	color: var(--color-text-main);
+}
+
+.ofd-list__toggle button:hover {
+	background: #f3f4f6;
 }

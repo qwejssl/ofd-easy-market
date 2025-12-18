@@ -43,7 +43,7 @@ function ContactForm() {
 				/>
 			</label>
 
-			<button type='submit'>Отправить обращение (демо)</button>
+			<button type='submit'>Отправить обращение</button>
 		</form>
 	)
 }

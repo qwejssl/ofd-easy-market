@@ -1,6 +1,6 @@
 import './OFDCard.css'
 
-function OFDCard({ provider }) {
+function OFDCard({ provider, onShowDetails }) {
 	return (
 		<article className='ofd-card'>
 			<header className='ofd-card__header'>
@@ -30,11 +30,7 @@ function OFDCard({ provider }) {
 			>
 				Купить код
 			</button>
-			<button
-				className='ofd-card__link'
-				type='button'
-				onClick={() => alert('Демо: подробное описание оператора')}
-			>
+			<button className='ofd-card__link' type='button' onClick={onShowDetails}>
 				Подробнее об операторе
 			</button>
 		</article>

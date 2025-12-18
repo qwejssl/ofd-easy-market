@@ -18,8 +18,9 @@ function About() {
 			</div>
 			<div className='about__card' id='contacts'>
 				<h3>Контакты</h3>
-				<p>Учебный проект OFDEasy Маркет.</p>
+				<p>OFDEasy Маркет.</p>
 				<p>Email: info@ofdeasy.ru</p>
+				<p>Телефон: +7 (000) 000‑00‑00</p>
 				<p>График: пн–пт, 10:00–19:00 (МСК)</p>
 			</div>
 		</section>

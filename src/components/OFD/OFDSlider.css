@@ -1,0 +1,104 @@
+.ofd-slider {
+	margin-top: 40px;
+}
+
+.ofd-slider__header h2 {
+	font-size: 24px;
+	margin-bottom: 6px;
+}
+
+.ofd-slider__header p {
+	font-size: 14px;
+	color: var(--color-text-muted);
+}
+
+.ofd-slider__viewport {
+	position: relative;
+	margin-top: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.ofd-slider__window {
+	overflow: hidden;
+	width: 100%;
+}
+
+.ofd-slider__track {
+	display: flex;
+	transition: transform 0.4s ease-in-out; /* плавность */
+}
+
+.ofd-slider__slide {
+	flex: 0 0 calc(100% / 3); /* 3 карточки на широкой ширине */
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+
+.ofd-slider__arrow {
+	border: none;
+	background: #ffffff;
+	border-radius: 999px;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #4b5563;
+	font-size: 20px;
+	flex-shrink: 0;
+}
+
+.ofd-slider__arrow--left {
+	margin-right: 8px;
+}
+
+.ofd-slider__arrow--right {
+	margin-left: 8px;
+}
+
+.ofd-slider__arrow:hover {
+	background: #f3f4f6;
+}
+
+.ofd-slider__dots {
+	display: flex;
+	gap: 6px;
+	margin-top: 10px;
+}
+
+.ofd-slider__dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 999px;
+	border: none;
+	background: #d1d5db;
+	cursor: pointer;
+}
+
+.ofd-slider__dot--active {
+	width: 18px;
+	background: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+	.ofd-slider__slide {
+		flex: 0 0 calc(100% / 2); /* 2 карточки на средних экранах */
+	}
+}
+
+@media (max-width: 640px) {
+	.ofd-slider__slide {
+		flex: 0 0 100%; /* 1 карточка на мобиле */
+	}
+
+	.ofd-slider__arrow--left {
+		margin-right: 4px;
+	}
+
+	.ofd-slider__arrow--right {
+		margin-left: 4px;
+	}
+}

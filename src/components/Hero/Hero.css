@@ -2,16 +2,6 @@
 	padding: 40px 0 32px;
 }
 
-.hero__badge {
-	display: inline-block;
-	padding: 4px 10px;
-	border-radius: 999px;
-	background: #eef2ff;
-	color: #4338ca;
-	font-size: 12px;
-	margin-bottom: 14px;
-}
-
 .hero__content {
 	max-width: 720px;
 }
@@ -70,11 +60,6 @@
 
 .hero__secondary:hover {
 	background: #f3f4f6;
-}
-
-.hero__note {
-	font-size: 12px;
-	color: #6b7280;
 }
 
 @media (max-width: 640px) {

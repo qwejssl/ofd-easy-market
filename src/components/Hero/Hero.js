@@ -3,7 +3,6 @@ import './Hero.css'
 function Hero() {
 	return (
 		<section className='hero'>
-			<span className='hero__badge'>Учебный проект / Demo</span>
 			<div className='hero__content'>
 				<h1>Коды ОФД со скидками до 70% для онлайн‑касс</h1>
 				<p>
@@ -30,10 +29,6 @@ function Hero() {
 						Как это работает
 					</a>
 				</div>
-				<p className='hero__note'>
-					Важно: все данные и цены на этом сайте учебные и используются только в
-					демонстрационных целях.
-				</p>
 			</div>
 		</section>
 	)

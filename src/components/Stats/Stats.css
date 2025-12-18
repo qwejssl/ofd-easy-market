@@ -1,0 +1,25 @@
+.stats {
+	margin-top: 40px;
+	padding: 20px 16px;
+	border-radius: 12px;
+	background: #f3f4ff;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 16px;
+}
+
+.stats__item {
+	text-align: center;
+}
+
+.stats__number {
+	font-size: 24px;
+	font-weight: 700;
+	color: #1d4ed8;
+	margin-bottom: 4px;
+}
+
+.stats__label {
+	font-size: 13px;
+	color: #4b5563;
+}

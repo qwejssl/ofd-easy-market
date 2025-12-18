@@ -1,0 +1,41 @@
+.ofd-card {
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ofd-card__name {
+	font-size: 18px;
+	color: #111827;
+}
+
+.ofd-card__plans {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ofd-card__plans li {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #4b5563;
+}
+
+.ofd-card__button {
+	margin-top: 8px;
+	padding: 8px 12px;
+	border-radius: 6px;
+	border: none;
+	background: #10b981;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.ofd-card__button:hover {
+	background: #059669;
+}

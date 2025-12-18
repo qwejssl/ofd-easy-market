@@ -1,0 +1,20 @@
+.ofd-list {
+	margin-top: 40px;
+}
+
+.ofd-list h2 {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.ofd-list__subtitle {
+	font-size: 14px;
+	color: #6b7280;
+	margin-bottom: 24px;
+}
+
+.ofd-list__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 16px;
+}

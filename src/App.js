@@ -1,13 +1,12 @@
 import './App.css';
 import Layout from './components/Layout/Layout';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <Layout>
-      <section id="home">
-        <h1>Платформа кодов ОФД со скидками</h1>
-        <p>Подберите оператора фискальных данных и срок подключения в пару кликов.</p>
-      </section>
+      <Hero />
+      {/* сюда позже добавим список операторов и блоки О нас/Контакты */}
     </Layout>
   );
 }

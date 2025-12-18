@@ -1,14 +1,31 @@
 import './Header.css'
 
+function scrollToId(id) {
+	const el = document.getElementById(id)
+	if (el) {
+		el.scrollIntoView({ behavior: 'smooth' })
+	}
+}
+
 function Header() {
 	return (
 		<header className='header'>
-			<div className='header__logo'>OFDEasy Маркет</div>
+			<div className='header__logo' onClick={() => scrollToId('home')}>
+				OFDEasy Маркет
+			</div>
 			<nav className='header__nav'>
-				<a href='#home'>Главная</a>
-				<a href='#operators'>Операторы</a>
-				<a href='#about'>О нас</a>
-				<a href='#contacts'>Контакты</a>
+				<button type='button' onClick={() => scrollToId('home')}>
+					Главная
+				</button>
+				<button type='button' onClick={() => scrollToId('operators')}>
+					Операторы
+				</button>
+				<button type='button' onClick={() => scrollToId('about')}>
+					О нас
+				</button>
+				<button type='button' onClick={() => scrollToId('contacts')}>
+					Контакты
+				</button>
 			</nav>
 		</header>
 	)

@@ -51,3 +51,17 @@
 .hero__secondary:hover {
 	background: #f3f4f6;
 }
+
+@media (max-width: 640px) {
+	.hero {
+		padding-top: 32px;
+	}
+
+	.hero__content h1 {
+		font-size: 26px;
+	}
+
+	.hero__content p {
+		font-size: 15px;
+	}
+}

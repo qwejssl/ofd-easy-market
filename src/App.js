@@ -1,4 +1,5 @@
 import './App.css'
+import About from './components/About/About'
 import Hero from './components/Hero/Hero'
 import Layout from './components/Layout/Layout'
 import OFDList from './components/OFD/OFDList'
@@ -10,6 +11,7 @@ function App() {
 			<Hero />
 			<OFDList />
 			<Stats />
+			<About />
 		</Layout>
 	)
 }

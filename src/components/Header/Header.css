@@ -56,3 +56,28 @@
 		padding: 4px 8px;
 	}
 }
+
+.header__logo a {
+	font-weight: 700;
+	font-size: 20px;
+	color: #1f2933;
+	text-decoration: none;
+}
+
+.header__nav a {
+	text-decoration: none;
+	color: #4b5563;
+	font-size: 14px;
+	padding: 6px 10px;
+	border-radius: 999px;
+}
+
+.header__nav a:hover {
+	background: #f3f4f6;
+	color: #111827;
+}
+
+.header__nav a.active {
+	background: #2563eb;
+	color: #ffffff;
+}

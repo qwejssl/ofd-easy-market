@@ -1,31 +1,36 @@
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
-function scrollToId(id) {
-	const el = document.getElementById(id)
-	if (el) {
-		el.scrollIntoView({ behavior: 'smooth' })
-	}
-}
-
 function Header() {
+	const location = useLocation()
+
 	return (
 		<header className='header'>
-			<div className='header__logo' onClick={() => scrollToId('home')}>
-				OFDEasy Маркет
+			<div className='header__logo'>
+				<Link to='/'>OFDEasy Маркет</Link>
 			</div>
 			<nav className='header__nav'>
-				<button type='button' onClick={() => scrollToId('home')}>
+				<Link className={location.pathname === '/' ? 'active' : ''} to='/'>
 					Главная
-				</button>
-				<button type='button' onClick={() => scrollToId('operators')}>
+				</Link>
+				<Link
+					className={location.pathname === '/operators' ? 'active' : ''}
+					to='/operators'
+				>
 					Операторы
-				</button>
-				<button type='button' onClick={() => scrollToId('about')}>
+				</Link>
+				<Link
+					className={location.pathname === '/about' ? 'active' : ''}
+					to='/about'
+				>
 					О нас
-				</button>
-				<button type='button' onClick={() => scrollToId('contacts')}>
+				</Link>
+				<Link
+					className={location.pathname === '/contacts' ? 'active' : ''}
+					to='/contacts'
+				>
 					Контакты
-				</button>
+				</Link>
 			</nav>
 		</header>
 	)
